@@ -20,4 +20,17 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
+
+Route.get('/', async () => {
+  return { message: 'API do Corelab Challenge funcionando 🚀' }
+})
+
+Route.get('/todos', 'Http/ToDosController.index')
+Route.post('/todos', 'Http/ToDosController.store')
+Route.get('/todos/:id', 'Http/ToDosController.show')
+Route.put('/todos/:id', 'Http/ToDosController.update')
+Route.delete('/todos/:id', 'Http/ToDosController.destroy')
+Route.patch('/todos/:id/favorite', 'Http/ToDosController.toggleFavorite')
+
+
 Route.get('/vehicles', 'VehiclesController.index');
