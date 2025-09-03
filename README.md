@@ -4,34 +4,30 @@
 
 Este é o frontend da aplicação Corelab Challenger, desenvolvido em React com TypeScript.
 
-## Pré-requisitos
-
-* Node.js >= 18
-* npm
 
 ## Instalação
 
 1. Clone o repositório:
 
-```bash
+```plaintext
 git clone git@github.com:crramires/corelab-web-challenger.git
 ```
 
 2. Entre na pasta do projeto:
 
-```bash
+```sh
 cd corelab-web-challenger
 ```
 
 3. Instale as dependências:
 
-```bash
+```sh
 npm install
 ```
 
 ## Rodando a aplicação
 
-```bash
+```sh
 npm start
 ```
 
@@ -59,19 +55,19 @@ Este é o backend da aplicação Corelab Challenger, desenvolvido em AdonisJS 5 
 
 1. Clone o repositório:
 
-```bash
+```sh
 git clone git@github.com:crramires/corelab-api-challenger.git
 ```
 
 2. Entre na pasta do projeto:
 
-```bash
+```sh
 cd corelab-api-challenger
 ```
 
 3. Instale as dependências:
 
-```bash
+```sh
 npm install
 ```
 
@@ -79,7 +75,7 @@ npm install
 
 ```
 DB_CONNECTION=pg
-APP_KEY=Gere uma APP_KEY com esse comando: node ace generate:key
+APP_KEY=acBZTOxn38iq_UnmDXNChPyZb0b187t-
 NODE_ENV=development
 PORT=3333
 HOST=0.0.0.0
@@ -87,7 +83,7 @@ HOST=0.0.0.0
 PG_HOST=127.0.0.1
 PG_PORT=5432
 PG_USER=postgres
-PG_PASSWORD=sua_senha
+PG_PASSWORD=123
 PG_DB_NAME=corelab_api
 DRIVE_DISK=local
 ```
@@ -96,13 +92,13 @@ DRIVE_DISK=local
 
 6. Rode as migrations:
 
-```bash
+```sh
 node ace migration:run
 ```
 
 ## Rodando a aplicação
 
-```bash
+```sh
 node ace serve --watch
 ```
 
